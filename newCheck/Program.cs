@@ -408,3 +408,357 @@
 ////////////////////////////
 ////////////////////////////
 ///////////////////////////
+/// Семинар 5
+///////////////////////Создаем матрицу
+
+
+
+// int[,] CreateMatrix(int rows, int colums, int min, int max)
+// {
+//     int[,] matrix = new int[rows, colums];
+//     Random random = new Random();
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i,j] = random.Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+//      for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             System.Console.Write(matrix[i, j] + " ");
+//         }
+//         System.Console.WriteLine();
+//     }
+// }
+
+
+// System.Console.WriteLine("input rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input min: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input max: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[,] myMatrix = CreateMatrix(rows, colums, min, max);
+// PrintMatrix(myMatrix);
+
+
+
+//////////////////////////////////////////
+////////////////////////////////////////
+////////////////////////////////////
+/////////////////////////////////////////
+///Вторая задача
+///Возвести в квадрат элементы с четными индексами
+
+
+// int[,] CreateMatrix(int rows, int colums, int min, int max)
+// {
+//     int[,] matrix = new int[rows, colums];
+//     Random random = new Random();
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix[i,j] = random.Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+//      for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             System.Console.Write(matrix[i, j] + " ");
+//         }
+//         System.Console.WriteLine();
+//     }
+//     System.Console.WriteLine();
+// }
+
+// int[,] QuadMatrix(int[,] matrix)
+// {
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             if(i % 2 == 0 && j % 2 == 0)
+//             {
+//                 matrix[i, j] = matrix[i, j] * matrix[i, j];
+//             }
+//         }
+//     }
+//     return matrix;
+// }    
+
+// System.Console.WriteLine("input rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input min: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input max: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[,] myMatrix = CreateMatrix(rows, colums, min, max);
+// PrintMatrix(myMatrix);
+// PrintMatrix(QuadMatrix(myMatrix));
+
+
+
+
+/////////////////////////////
+/////////////////////////////
+////////////////////////////
+////////////////////////////
+///Сумма главной диагонали
+///
+
+// int[,] CreateMatrix(int rows, int colums, int min, int max) 
+// {
+//     int[,] matrix = new int[rows, colums];
+//     Random random = new Random();
+//     for(int i = 0; i < rows; i++)
+//     {
+//         for(int j = 0; j < colums; j++)
+//         {
+//             matrix[i, j] = random.Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+//  void PrintMatrix(int[,] matrix)
+//  {
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//         System.Console.Write(matrix[i, j] + " ");
+//         }
+//         System.Console.WriteLine();
+//     }
+//     System.Console.WriteLine();
+//  }
+
+// int SumOfMaindiagonal(int[,] matrix)
+// {
+//     int sum = 0;
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             if(i == j)
+//             {
+//                 sum = sum + matrix[i, j];
+//             }
+//         }
+//     }
+//     return sum;
+// }
+
+
+// System.Console.WriteLine("Input number of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input number of colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input min value of array element: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input max value of array element: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[,] matrix = CreateMatrix(rows, colums, min, max);
+// PrintMatrix(matrix);
+// System.Console.WriteLine(SumOfMaindiagonal(matrix));
+
+
+
+/////////////////////////////////////
+/////////////////////////////////
+//////////////////////////////////
+/////////////////////////////////
+/////////////////////////////////\
+///Среднее арифметическое строк
+///
+
+
+
+// int[,] CreateMatrix(int rows, int colums, int min, int max) 
+// {
+//     int[,] matrix = new int[rows, colums];
+//     Random random = new Random();
+//     for(int i = 0; i < rows; i++)
+//     {
+//         for(int j = 0; j < colums; j++)
+//         {
+//             matrix[i, j] = random.Next(min, max + 1);
+//         }
+//     }
+//     return matrix;
+// }
+
+ 
+// void PrintArray(double[] array)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+//  void PrintMatrix(int[,] matrix)
+//  {
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//         System.Console.Write(matrix[i, j] + " ");
+//         }
+//         System.Console.WriteLine();
+//     }
+//     System.Console.WriteLine();
+//  }
+
+// double[] SrAr(int[,] matrix)
+// {
+//     double[] result = new double[matrix.GetLength(0)];
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {   
+//         int sum = 0;
+//         for(int j = 0; j < matrix.GetLength(1); j ++)
+//         {
+//             sum = sum + matrix[i, j];
+//         }
+//         result[i] = (double)sum / matrix.GetLength(1);
+//     }
+//     return result;
+// }
+
+
+// System.Console.WriteLine("Input number of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input number of colums: ");
+// int colums = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input min value of array element: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("Input max value of array element: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[,] matrix = CreateMatrix(rows, colums, min, max);
+// PrintMatrix(matrix);
+// PrintArray(SrAr(matrix));
+
+///////////////////////////////////////////
+///////////////////////////////////
+///////////////////////////////////////
+///////////////////////////////
+//////////////////////////////////\
+///////////////// 5й семинар
+
+//// Первое задание ПЕРЕВОД ИЗ CHAR B STRING
+
+
+// string CharToString(char[] chars)
+// {
+//     string result = string.Empty;
+//     for(int i = 0; i < chars.Length; i++)
+//     {
+//         result += chars[i];
+//     }
+//     return result;
+
+// }
+
+
+// char[] chars = {'a', 'b', 'c', 'd', 'e', '@'};
+// System.Console.WriteLine(CharToString(chars));
+
+
+/////////////////////////////////
+///////////////////////////////
+//////////////////////////////
+/////////// STRING TO CHAR
+
+
+// void Printarray(char[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write("'" + array[i] + "' " );
+//     }
+//     System.Console.WriteLine("");
+// }
+
+// char[] StringToChar(string str)
+// {
+//     char[] result = new char[str.Length];
+//     for(int i = 0; i < str.Length; i++)
+//     {
+//         result[i] = str[i];
+//     }
+//     return result;
+// }
+
+// Printarray(StringToChar("abcdef@"));
+
+////////////////////////
+////////////////////////////
+/////////////////////////////
+////////////////////////////// Третье заддание 
+//// ПРОВЕРК ГЛАСНЫХ БУКВ
+
+
+
+// void Printarray(char[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write("'" + array[i] + "' " );
+//     }
+//     System.Console.WriteLine("");
+// }
+
+
+// int VovelsCounter(string str)
+// {
+    
+//     char[] vowves = {'a', 'e', 'i', 'o', 'u', 'y'};
+
+//     int voweCount = 0;
+
+//     for(int i = 0; i < str.Length; i++)
+//     {   
+//         for(int j = 0; j < vowves.Length; j++)
+//         {
+//             if(str[i] == vowves [j])
+//             {
+//             voweCount++;
+//             break;
+//             }
+//         }
+//     }
+//     return voweCount;
+// }
+
+
+// System.Console.WriteLine("Ввести строку из маеньких букв; ");
+// string str = Console.ReadLine();
+
+
+// System.Console.WriteLine($"Гласныхж:   {VovelsCounter(str)}");
+
+
