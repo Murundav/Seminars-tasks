@@ -376,3 +376,35 @@
 // int[] myArray = CreateArray(size, min, max);
 // Printarray(myArray);
 // Printarray(ProcessArr(myArray));
+
+
+///////////////////////////////
+////////////////////////////////
+/////////////////////////////
+////////////////////////////////
+//////////////////////////////
+//// Четвертая лекция
+
+
+// int CounterDigits(int number)
+// {
+//     int counter = 0;
+//     while(number > 0)
+//     {
+//         number = (number - number % 10) / 10;
+//         counter++;
+//     }
+//     return counter;
+// }
+
+
+// System.Console.WriteLine("input number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine(CounterDigits(num)); 
+
+
+////////////////////////////
+////////////////////////////
+////////////////////////////
+////////////////////////////
+///////////////////////////
