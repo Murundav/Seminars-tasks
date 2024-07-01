@@ -216,3 +216,163 @@
 // int y = Convert.ToInt32(Console.ReadLine());
 
 // Kratnost(x, y);
+
+
+
+/////////////////////////////
+////////////////////////
+/////////////////////////
+///////////////////////////////
+/////////////////////////////////
+////ТРЕТИЙ СЕМИНАР
+////Создаем массив определяем есть ли числа в массиве
+
+// int[] CreateArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     Random random = new Random();
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = random.Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void Printarray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// bool SearchNum(int[] array, int num)
+// {
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         if(array[i] == num)
+//         {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+
+// System.Console.WriteLine("input size: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input min: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input max: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[] myArray = CreateArray(size, min, max);
+// Printarray(myArray);
+
+// System.Console.WriteLine("input num: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// System.Console.WriteLine(SearchNum(myArray, num));
+
+
+
+//////////////////////
+////////////////////////////
+/////////////////////
+///////////////////////
+////////////////////////////////Второе задание
+///////////// Массив от - 10 до 10 пменять местами
+
+
+// int[] CreateArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     Random random = new Random();
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = random.Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void Printarray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// int[] RevoltArr(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] *= -1;
+//     }
+//     return array;
+// }
+
+// System.Console.WriteLine("input size: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input min: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input max: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[] myArray = CreateArray(size, min, max);
+// Printarray(myArray);
+// myArray = RevoltArr(myArray);
+// Printarray(myArray);
+
+
+// ////////////////////////////
+///////////////////////////
+////////////////////////////
+//////////////////////////////////
+/////////////////////////// создать массив, перемножить перый и последний элементы и вывести в массив
+
+
+// int[] CreateArray(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     Random random = new Random();
+//     for(int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = random.Next(min, max + 1);
+//     }
+//     return array;
+// }
+
+// void Printarray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         System.Console.Write(array[i] + " ");
+//     }
+//     System.Console.WriteLine();
+// }
+
+// int[] ProcessArr (int[] array)
+// {
+//     int[] resultArray = new int[array.Length / 2];
+
+//     for (int i = 0; i < resultArray.Length; i++)
+//     {
+//         resultArray[i] =  array[i] * array[array.Length - i - 1];
+//     }
+//     return resultArray;
+// }
+
+
+// System.Console.WriteLine("input size: ");
+// int size = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input min: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// System.Console.WriteLine("input max: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+
+// int[] myArray = CreateArray(size, min, max);
+// Printarray(myArray);
+// Printarray(ProcessArr(myArray));
